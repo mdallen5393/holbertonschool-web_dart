@@ -7,12 +7,15 @@ class User extends Password {
   double height;
 
   User({
-      required this.id,
-      required this.name,
-      required this.age,
-      required this.height,
-      String? user_password}
-    ) : super(password: user_password);
+    required this.id,
+    required this.name,
+    required this.age,
+    required this.height,
+    String? user_password,
+  }) : super(password: user_password) {
+    isValid();
+  }
+
 
   String? get user_password => password;
 
@@ -40,6 +43,6 @@ class User extends Password {
 
   @override
   String toString() {
-    return 'User(id : $id ,name: $name, age: $age, height: $height, Password: ${isValid()})';
+    return 'User(id : $id ,name: $name, age: $age, height: $height, Password: $password)';
   }
 }
