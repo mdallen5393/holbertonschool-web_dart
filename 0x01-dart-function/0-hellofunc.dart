@@ -1,3 +1,3 @@
 void helloFunction(String str) {
-  print('Hello $name from dart');
+  print('Hello $str from dart');
 }
