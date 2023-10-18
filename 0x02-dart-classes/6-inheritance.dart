@@ -21,6 +21,7 @@ class User extends Password {
 
   set user_password(String? value) {
     password = value;
+    isValid();
   }
 
   Map<String, dynamic> toJson() {
