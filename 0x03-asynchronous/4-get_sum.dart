@@ -15,6 +15,5 @@ Future<double> calculateTotal() async {
     return total;
   } catch (error) {
     return -1;
-    why is this not working!?!!?
   }
 }
