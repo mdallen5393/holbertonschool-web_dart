@@ -5,7 +5,6 @@ class User extends Password {
   String name;
   int age;
   double height;
-  String? user_password;
 
   User({
       required this.id,
@@ -13,8 +12,13 @@ class User extends Password {
       required this.age,
       required this.height,
       String? user_password}
-    ) : user_password = user_password,
-    super(password: user_password);
+    ) : super(password: user_password);
+
+  String? get user_password => password;
+
+  set user_password(String? value) {
+    password = value;
+  }
 
   Map<String, dynamic> toJson() {
     return {

@@ -17,11 +17,11 @@ class Password {
     return 'Your Password is: ${_password ?? "not set"}';
   }
 
-  String get password {
+  String? get password {
     return _password ?? "not set";
   }
 
-  void set password(String input) {
+  void set password(String? input) {
     this._password = input;
   }
 }
