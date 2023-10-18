@@ -1,7 +1,7 @@
-import '0-class.dart';
+class User {
+  String name = '';
 
-void main() {
-  final firstPer = User();
-  firstPer.name = "Youssef Belhadj";
-  print(firstPer.showName());
+  String showName() {
+    return 'Hello $name';
+  }
 }
